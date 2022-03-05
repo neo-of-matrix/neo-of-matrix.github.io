@@ -8,13 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '一句话解释一个知识点',
   tagline: '醒醒',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://neo-of-matrix.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'neo-of-matrix.github.io', // Usually your repo name.
 
   presets: [
     [
