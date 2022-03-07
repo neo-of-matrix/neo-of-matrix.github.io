@@ -57,7 +57,7 @@ const config = {
           },
           {to: '/blog', label: '博客', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/neo-of-matrix',
             label: 'GitHub',
             position: 'right',
           },
@@ -82,14 +82,6 @@ const config = {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
             ],
           },
           {
@@ -101,12 +93,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/neo-of-matrix',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} neo-of-matrix, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} neo-of-matrix, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
