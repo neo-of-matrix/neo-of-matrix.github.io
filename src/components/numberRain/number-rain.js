@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from "react";
-
+import _debounce from "lodash/debounce";
 export default function NumberRain() {
   const textInput = useRef(null);
+  let timeId = null;
   const init = function () {
     const can = textInput.current;
     can.width = document.documentElement.clientWidth;
-    can.height = 300;
+    can.height = 510;
     const canWidth = can.width;
     const canHeight = can.height;
     const str = "01";
@@ -17,7 +18,7 @@ export default function NumberRain() {
     for (let i = 0; i < column; i++) {
       arr[i] = 60;
     }
-    setInterval(draw, 50);
+    timeId = setInterval(draw, 50);
     function draw() {
       ctx.fillStyle = "rgba(0,0,0,0.07)";
       ctx.fillRect(0, 0, canWidth, canHeight);
@@ -38,5 +39,12 @@ export default function NumberRain() {
   useEffect(() => {
     textInput.current && init();
   });
-  return <canvas ref={textInput}>更新浏览器</canvas>;
+  window.addEventListener(
+    "resize",
+    _debounce(function () {
+      clearInterval(timeId);
+      textInput.current && init();
+    }, 600)
+  );
+  return <canvas ref={textInput}>您的浏览器不支持 HTML5 canvas 标签。</canvas>;
 }
