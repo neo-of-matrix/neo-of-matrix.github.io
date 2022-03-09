@@ -16,7 +16,7 @@ const config = {
   projectName: 'neo-of-matrix.github.io', // Usually your repo name.
   organizationName: 'neo-of-matrix', // Usually your GitHub org/user name.
   trailingSlash: true,
-  deploymentBranch:"master",
+  deploymentBranch:"gh-pages",
   presets: [
     [
       'classic',
