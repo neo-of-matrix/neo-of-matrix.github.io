@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.jpg',
   projectName: 'neo-of-matrix.github.io', // Usually your repo name.
   organizationName: 'Neo', // Usually your GitHub org/user name.
 
@@ -28,6 +28,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: "最新博客"
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,7 +44,7 @@ const config = {
         title: '首页',
         logo: {
           alt: 'logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.jpg',
         },
         items: [
           {
@@ -75,10 +76,10 @@ const config = {
           {
             title: '社区',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: '',
-              },
+              // {
+              //   label: 'Stack Overflow',
+              //   href: '',
+              // },
             ],
           },
           {
