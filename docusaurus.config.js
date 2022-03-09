@@ -14,8 +14,9 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.jpg',
   projectName: 'neo-of-matrix.github.io', // Usually your repo name.
-  organizationName: 'Neo', // Usually your GitHub org/user name.
-
+  organizationName: 'neo-of-matrix', // Usually your GitHub org/user name.
+  trailingSlash: true,
+  deploymentBranch:"master",
   presets: [
     [
       'classic',
