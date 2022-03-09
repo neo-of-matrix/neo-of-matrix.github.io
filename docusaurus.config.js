@@ -24,13 +24,10 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:'',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,9 +48,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'about',
             position: 'left',
-            label: '关于',
+            label: '笔记',
           },
           {to: '/blog', label: '博客', position: 'left'},
           {
@@ -70,8 +67,8 @@ const config = {
             title: '文档',
             items: [
               {
-                label: '关于',
-                to: '/docs/intro',
+                label: '笔记',
+                to: '/docs/about',
               },
             ],
           },
@@ -80,7 +77,7 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: '',
               },
             ],
           },
