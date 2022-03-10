@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[631],{5641:function(t){t.exports=JSON.parse('{"title":"\u6700\u65b0\u535a\u5ba2","items":[{"title":"How to fetch data with React Hooks","permalink":"/blog/How to fetch data with React Hooks"}]}')}}]);
