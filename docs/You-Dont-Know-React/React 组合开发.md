@@ -1,7 +1,3 @@
----
-sidebar_position: 8
----
-
 # React 组合开发模式
 
 ### 通用组件：`Sidebar` 和 `Dialog`

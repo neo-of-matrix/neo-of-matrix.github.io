@@ -1,8 +1,4 @@
----
-sidebar_position: 12
----
-
-# React-Hooks
+# React Hooks
 
 ### useState
 

@@ -1,7 +1,3 @@
----
-sidebar_position: 9
----
-
 # React 编程思考
 
 开发之前思考如何构建一个应用
