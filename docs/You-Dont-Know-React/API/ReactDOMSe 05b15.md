@@ -11,7 +11,7 @@ import ReactDOMServer from 'react-dom/server';
 var ReactDOMServer = require('react-dom/server');
 ```
 
-服务端和浏览器
+### 不支持流的环境
 
 - `[renderToString()](https://zh-hans.reactjs.org/docs/react-dom-server.html#rendertostring)`
     - 将 React 元素渲染为初始 HTML
@@ -24,9 +24,13 @@ var ReactDOMServer = require('react-dom/server');
         服务端上使用 `[renderToString](https://zh-hans.reactjs.org/docs/react-dom-server.html#rendertostring)` 或在前端上使用 `[ReactDOM.hydrate()](https://zh-hans.reactjs.org/docs/react-dom.html#hydrate)` 来代替
         
 
-服务端
+### Node流环境
 
-- `[renderToNodeStream()](https://zh-hans.reactjs.org/docs/react-dom-server.html#rendertonodestream)`
+- `ReactDOMServer.renderToPipeableStream(element, options)`
+    - 渲染react元素为原始html
+    - 返回一个流，里面有 pipe 和 abort 方法
+    - 支持Suspense and streaming of HTML
+- `[renderToNodeStream()](https://zh-hans.reactjs.org/docs/react-dom-server.html#rendertonodestream)`(Deprecated)
     
     `ReactDOMServer.renderToNodeStream(element)`
     
@@ -38,3 +42,12 @@ var ReactDOMServer = require('react-dom/server');
     - 如果你计划在前端使用 React 以使得标记可交互，请不要使用此方法
         
         服务端上使用 `[renderToNodeStream](https://zh-hans.reactjs.org/docs/react-dom-server.html#rendertonodestream)` 或在前端上使用 `[ReactDOM.hydrate()](https://zh-hans.reactjs.org/docs/react-dom.html#hydrate)` 来代替
+        
+
+### web 流（browsers, Deno, and some modern edge runtimes）
+
+`ReactDOMServer.renderToReadableStream(element, options);`
+
+- react 元素使用strea转化为原始html
+- 返回一个可读流promise
+- 支持Suspense and streaming of HTML

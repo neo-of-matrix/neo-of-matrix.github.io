@@ -50,3 +50,18 @@ React 支持所有的现代浏览器，包括 IE9 及以上版本，但是需要
     `ReactDOM.createPortal(child, container)`
     
     将子节点渲染到 DOM 节点
+    
+- **`flushSync`**
+    
+    ```jsx
+    flushSync(callback)
+    ```
+    
+    强制同步更新回调函数内容
+    
+    - 影响性能尽量少用
+    - Suspense 可能展示 fallback
+    - 可以使用副作用返回之前同步应用它们所包含的任何更新
+    - 当需要刷新内部的更新时，`flushSync` 也可以在回调外部刷新更新
+        
+        例如，如果有来自点击的未决更新。React 可能会在刷新回调之前刷新这些更新
