@@ -1,5 +1,5 @@
 ---
-slug: Hooks, State, Closures, and useReducer（译）
+slug: /
 title: Hooks, State, Closures, and useReducer（译）
 authors: [neo-of-matrix]
 tags: [译]

@@ -37,7 +37,18 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      "content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: "books",
+        path: "books",
+        routeBasePath: "books",
+        sidebarPath: require.resolve("./sidebarsCommunity.js"),
+      }),
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -55,6 +66,7 @@ const config = {
             label: '笔记',
           },
           {to: '/blog', label: '博客', position: 'left'},
+          {to: '/books', label: '书籍', position: 'left'},
           {
             href: 'https://github.com/neo-of-matrix',
             label: 'GitHub',

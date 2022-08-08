@@ -1,9 +1,7 @@
 ---
 sidebar_position: 1
+title: 关于
 ---
-
-# 关于
-
 ### Hi there 👋
 
 - 🍒I'm a Software Engineer
