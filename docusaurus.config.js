@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '一句话解释一个知识点',
-  tagline: '醒醒',
+  tagline: '最少的语言解释复杂的知识',
   url: 'https://neo-of-matrix.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -45,7 +45,7 @@ const config = {
         id: "books",
         path: "books",
         routeBasePath: "books",
-        sidebarPath: require.resolve("./sidebarsCommunity.js"),
+        sidebarPath: require.resolve("./sidebars.js"),
       }),
     ],
   ],
